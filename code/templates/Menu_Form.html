@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Menu Item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <section class="order" id="order">
+        <div class="row">
+            <div class="image">
+                <h2 class="heading"> <span> Add Menu Item </span> </h2>
+            </div>
+            <form action="/submit_menu_item" method="post">
+                <div class="inputBox">
+                    <input type="text" placeholder="Item Name" name="item_name">
+                    <textarea placeholder="Description" name="description" rows="4"></textarea>
+                </div>
+                <div class="inputBox">
+                    <select name="category" class="form-control">
+                        <option value="appetizer">Appetizer</option>
+                        <option value="main_course">Main Course</option>
+                        <option value="dessert">Dessert</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <input type="number" placeholder="Price" name="price" step="0.01" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Ingredients" name="ingredients" rows="4"></textarea>
+                    <input type="text" placeholder="Allergens" name="allergens" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Dietary Information" name="dietary_info" class="form-control">
+                    <input type="text" placeholder="Availability" name="availability" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Spiciness Level" name="spiciness_level" class="form-control">
+                    <input type="number" placeholder="Preparation Time" name="preparation_time" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <input type="file" id="image" name="image" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Special Instructions" name="special_instructions" rows="4" class="form-control"></textarea>
+                    <input type="text" placeholder="Recommended Pairings" name="recommended_pairings" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Nutritional Information" name="nutritional_info" class="form-control">
+                    <input type="text" placeholder="Origin" name="origin" class="form-control">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="signature_dish">Signature Dish</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Promotional Tag" name="promotional_tag" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

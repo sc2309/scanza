@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanza </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <script src="https://kit.fontawesome.com/cf3c8d9c60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9322/9322499.png"> -->
+
+</head>
+
+<body onload="myfunc()">
+    <div class="changeFont">
+        <div id="preloader"></div>
+
+        <header>
+            {% include 'header.html' %}
+            <!-- <div id="menu-bar" class="fas fa-bars"></div> -->
+
+            <nav class="navbar">
+                <a href="#about"><b>About</b></a>
+                <a href="#benefits"><b>Benefits</b></a>
+                    <a href="/MenuForm"><b>Menu</b></a>
+                    <a href="#how-to-use"><b>How to Use </b></a>
+                    <a href="#contact"><b>Contact</b></a>
+                <a href="/signup"><b>Sign Up</b></a>
+                <a href="/login"><b>Login</b></a>
+
+                <!-- <a href="/signup" class="btn">Signup</a>  -->
+                <!-- <a href="/login" class="btn">Login</a>  -->
+                <!-- <div class="search">
+                    <form action="#Recommended">
+
+                        <input type="text"
+                            placeholder=" Search for an Exercise"
+                            name="search">
+                        <button>
+                            <i class="fa fa-search"
+                                style="font-size: 18px;">
+                            </i>
+                        </button>
+                    </form>
+                </div> -->
+            </nav>
+
+        </header>
+
+        <section class="home" id="home">
+        
+            <div class="content">
+                <h2>Welcome To<span> Scanza</span></h2>
+                <p>Welcome to scanza, your ultimate destination for all things sports and fitness! Our website is your one-stop hub for expert guidance, workout routines, nutrition tips, and the latest updates in the world of sports and fitness. </p>
+                <a href="#" class="btn">Explore Now</a>
+                <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+            </div>  
+
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading">About <span> Scanza</span> Scan And Show Menu</h1>
+          
+            <p class="para">Scanza revolutionizes the dining experience by offering a seamless solution for scanning and paying for meals at restaurants. With Scanza's innovative technology, customers can easily access menus, place orders, and make payments using their smartphones, enhancing convenience and efficiency.</p>
+            <!-- <a href="#" class="btn diet-btn">Explore Now</a> -->
+        </section>
+        <section class="benefits" id="benefits">
+            <h1 class="heading">Benefits of Using <span> Scanza</span> Scan And Show Menu</h1>
+          
+                <ol class="ol-1">
+
+                    <li>Enhances convenience for both customers and staff.</li>
+                    <li>Provides a seamless digital interface for browsing menu items.</li>
+                    <li>Eliminates the need to handle physical menus, promoting hygiene.</li>
+                    <li>Reduces the risk of transmitting germs and bacteria.</li>
+                    <li>Allows real-time updates to menu items, prices, and specials.</li>
+                    <li>Minimizes costs and waste associated with printing new menus.</li>
+                    <li>Enhances the overall dining experience with interactive features.</li>
+                    <li>Provides additional information such as ingredient details, nutritional facts, and customer reviews.</li>
+                    <li>Combines convenience, hygiene, sustainability, and customer engagement in one innovative solution.</li>
+                     <li>Longevity and Well-being: Access to healthcare ensures that athletes can sustain their passion for sports and fitness throughout their lives, leading to improved overall well-being and quality of life.</p>
+            </ol>
+            <!-- <a href="#" class="btn diet-btn">Explore Now</a> -->
+        </section>
+        <section>
+            <h1 class="heading"> <span> Scanza</span> Scan And Show Menu Page</h1>
+          
+            <p class="para">Explore Scanza 's scan and show menu page in order to use our feature</p>
+            <a href="#" class="btn diet-btn">Explore Now</a>
+        </section>
+        <section class="#how-to-use" id="#how-to-use">
+            <h1 class="heading">How To Use <span> Scanza</span> Scan And Show Menu</h1>
+          
+                <ol class="ol-1">
+
+                <li>Open the Scanza app on your smartphone.</li>
+                <li>Scan the QR code at your table to view the menu.</li>
+                <li>Select your items, pay securely, and enjoy your meal!</li>
+            </ol>
+            <!-- <a href="#" class="btn diet-btn">Explore Now</a> -->
+        </section>
+        
+
+        <section class="contact" id="contact">
+            <h2 class="heading"><span>Contact Us</span></h2>
+        <p class="para">If you have any questions or feedback, feel free to reach out to us:</p>
+        <ol class="ol-1">
+            <li>Email: info@scanzarestaurant.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Main Street, Cityville, State, Zip Code</li>
+        </ol>
+    </section>
+
+        <section class="footer">
+
+            <div class="share">
+                <a href="https://www.facebook.com/" class="btn"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.twitter.com/" class="btn"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" class="btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/" class="btn"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.linkedin.com/" class="btn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        
+            <h1 class="credit"> &copy;2023  <span> Scanza </span> | all rights reserved! </h1>
+        
+        </section>
+        
+        <!-- scroll top button  -->
+        <!-- <a href="#Home" id="myBtn" title="Go to top">Top</a> -->
+
+
+        <script>
+            var loader = document.getElementById('preloader')
+
+            function myfunc(){
+                loader.style.display= 'none';
+            }
+        </script>
+    </div>
+</body>
+</html>
